@@ -23,21 +23,21 @@ window.CONFIG = {
   // ----- IDENTIDADE DO CONVITE -------------------------------------------
   // Nome do aniversariante. Aparece no título da aba do navegador e nos
   // textos automáticos do convite.
-  nome: "Liz",
+  nome: "Milena",
 
   // ----- WHATSAPP (CONFIRMAR PRESENÇA) -----------------------------------
   // numero: DDI + DDD + número, SÓ DÍGITOS (sem +, espaço, parênteses ou traço).
   //         Ex.: 55 (Brasil) + 31 (DDD) + 985657116 -> "5531985657116"
   // mensagem: texto que já vem pré-preenchido quando a pessoa abre o WhatsApp.
   whatsapp: {
-    numero: "5511968658529",
-    mensagem: "Olá! Confirmo minha presença no aniversário da Liz."
+    numero: "5535988447193",
+    mensagem: "Olá! Confirmo minha presença no aniversário da Milena."
   },
 
   // ----- LOCALIZAÇÃO (BOTÃO MAPA) ----------------------------------------
   // Link completo do Google Maps. Abra o local no Maps, clique em "Compartilar"
   // -> "Copiar link" e cole aqui (mantenha as aspas).
-  mapa: "https://www.google.com/maps/@-23.451182,-46.5805723,3a,75y,60.02h,65.83t/data=!3m7!1e1!3m5!1svurXXU26dTFJo_HwDhBH-w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D24.169645649598294%26panoid%3DvurXXU26dTFJo_HwDhBH-w%26yaw%3D60.02452636468114!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDcyMC4wIKXMDSoASAFQAw%3D%3D",
+  mapa: "",
 
   // ----- DUAS LOCALIZAÇÕES (OPCIONAL) ------------------------------------
   // Preencha os dois links abaixo para o botão Localização abrir um menu
@@ -46,11 +46,11 @@ window.CONFIG = {
   localizacoes: {
     missa: {
       texto: "Missa",
-      link: "COLE_AQUI_O_LINK_DA_MISSA"
+      link: "https://maps.app.goo.gl/hr7nGUZXm54ygzCJ7"
     },
     festa: {
       texto: "Festa",
-      link: "COLE_AQUI_O_LINK_DA_FESTA"
+      link: "https://maps.app.goo.gl/MFyR5zzSgsJAEgY17"
     }
   },
 
@@ -64,8 +64,8 @@ window.CONFIG = {
     whatsapp: true,
     localizacao: true,
     presentes: true,
-    dresscode: false,
-    manual: false,
+    dresscode: true,
+    manual: true,
     contagem: false
   },
 
@@ -104,7 +104,9 @@ window.CONFIG = {
     hotspots: {
         confirm: { left:13.385800780551847, top:59.66051059081367, width:19.64355312204473, height:11.449252034014982 },
         map: { left:40.491117772523374, top:59.54541978412351, width:19.292465283626143, height:11.399863780795407 },
-        gift: { left:66.8695855250401, top:59.53459410174959, width:19.567092651757186, height:11.52034966267883 }
+        gift: { left:66.8695855250401, top:59.53459410174959, width:19.567092651757186, height:11.52034966267883 },
+        manual: { left:40.491117772523374, top:59.54541978412351, width:19.292465283626143, height:11.399863780795407 },
+        dresscode: { left:66.8695855250401, top:59.53459410174959, width:19.567092651757186, height:11.52034966267883 }
   },
 
   // ----- CONTAGEM REGRESSIVA ---------------------------------------------
