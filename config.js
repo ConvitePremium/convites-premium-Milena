@@ -64,8 +64,8 @@ window.CONFIG = {
     whatsapp: true,
     localizacao: true,
     presentes: true,
-    dresscode: false,
-    manual: false,
+    dresscode: true,
+    manual: true,
     contagem: false
   },
 
@@ -104,7 +104,9 @@ window.CONFIG = {
     hotspots: {
         confirm: { left:13.385800780551847, top:59.66051059081367, width:19.64355312204473, height:11.449252034014982 },
         map: { left:40.491117772523374, top:59.54541978412351, width:19.292465283626143, height:11.399863780795407 },
-        gift: { left:66.8695855250401, top:59.53459410174959, width:19.567092651757186, height:11.52034966267883 }
+        gift: { left:66.8695855250401, top:59.53459410174959, width:19.567092651757186, height:11.52034966267883 },
+        manual: { left:13.385800780551847, top:59.66051059081367, width:19.64355312204473, height:11.449252034014982 },
+        dresscode: { left:40.491117772523374, top:59.54541978412351, width:19.292465283626143, height:11.399863780795407 }
   },
 
   // ----- CONTAGEM REGRESSIVA ---------------------------------------------
