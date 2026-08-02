@@ -13,23 +13,23 @@
        link do repositório (URL_BASE abaixo). O resto da engine é automático.
        ==================================================================== -->
   <meta name="theme-color" content="#f6c1cd">
-  <title>Convite 15 ano Milena</title>
+  <title>Convite Liz 1 aninho</title>
 
   <!-- Cole aqui a URL base do convite publicado no GitHub Pages -->
   <!-- Ex.: https://convitepremium.github.io/convite-premium-Joao/ -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Convite 15 anos Milena">
+  <meta property="og:title" content="Convite Liz 1 aninho">
   <meta property="og:description" content="Clique para abrir o convite">
-  <meta property="og:url" content="https://convitepremium.github.io/convites-premium-Milena/">
-  <meta property="og:image" content="https://convitepremium.github.io/convites-premium-Milena/assets/preview-whatsapp.jpg">
-  <meta property="og:image:secure_url" content="https://convitepremium.github.io/convites-premium-Milena/assets/preview-whatsapp.jpg">
+  <meta property="og:url" content="https://convitepremium.github.io/convites-premium-Liz/">
+  <meta property="og:image" content="https://convitepremium.github.io/convites-premium-Liz/assets/preview-whatsapp.jpg">
+  <meta property="og:image:secure_url" content="https://convitepremium.github.io/convites-premium-Liz/assets/preview-whatsapp.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Convite 15 anos Milena">
+  <meta name="twitter:title" content="Convite Liz 1 aninho">
   <meta name="twitter:description" content="Clique para abrir o convite">
-  <meta name="twitter:image" content="https://convitepremium.github.io/convites-premium-Milena/assets/preview-whatsapp.jpg">
+  <meta name="twitter:image" content="https://convitepremium.github.io/convites-premium-Liz/assets/preview-whatsapp.jpg">
   <!-- Fim do bloco de preview -->
 
   <link rel="preload" href="assets/opening.webp" as="image">
@@ -75,7 +75,7 @@
     .loading{position:absolute;bottom:28px;left:0;right:0;text-align:center;color:#fff;text-shadow:0 2px 8px #000;font-size:14px;opacity:.85}
     .tap-btn{position:absolute;left:50%;bottom:34px;transform:translateX(-50%);z-index:6;border:1px solid rgba(255,255,255,.72);border-radius:999px;padding:12px 22px;background:rgba(255,255,255,.18);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font-size:14px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;text-shadow:0 1px 5px rgba(0,0,0,.55);box-shadow:0 8px 22px rgba(0,0,0,.20);animation:pulse 1.8s ease-in-out infinite}
     .music-unlock{display:none;position:fixed;left:50%;bottom:calc(env(safe-area-inset-bottom) + 24px);transform:translateX(-50%);z-index:12;border:1px solid rgba(255,255,255,.65);border-radius:999px;padding:11px 18px;background:rgba(255,255,255,.20);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:#fff;font-size:13px;font-weight:800;letter-spacing:.03em;text-transform:uppercase;text-shadow:0 1px 5px rgba(0,0,0,.55);box-shadow:0 8px 22px rgba(0,0,0,.22)}
-    body.need-music #musicUnlock{display:block}
+    body.is-ios.need-music #musicUnlock{display:block}
     .fade-out{animation:fadeOut .75s ease forwards}.fade-in{animation:fadeIn .75s ease forwards}
     @keyframes pulse{0%,100%{transform:translateX(-50%) scale(1);opacity:.88}50%{transform:translateX(-50%) scale(1.035);opacity:1}}
     @keyframes fadeOut{to{opacity:0;filter:blur(8px)}}@keyframes fadeIn{from{opacity:0;filter:blur(8px)}to{opacity:1;filter:blur(0)}}
@@ -210,6 +210,10 @@
        ENGINE V4 MODULAR — lê tudo de config.js. Não edite por convite.
        ======================================================================== */
     (function(){
+      const IS_IOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+        (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      document.body.classList.toggle("is-ios", IS_IOS);
+
       const CFG = window.CONFIG || {};
       const C = {
         nome: CFG.nome || "Convidado",
@@ -239,14 +243,14 @@
           manual:{mostrarTexto:true,posicao:{left:3.7,top:1.5,width:20,height:6}},
           contagem:{mostrarTexto:true,posicao:{left:3.7,top:1.5,width:20,height:6}}
         }, CFG.botoesVoltar || {}),
-        hotspots: CFG.hotspots || {
+        hotspots: Object.assign({
           confirm:{left:18.5,top:68.8,width:20.5,height:11.2},
           map:{left:39.5,top:68.8,width:20.5,height:11.2},
           gift:{left:60.5,top:68.8,width:18.0,height:11.2},
           dress:{left:79.5,top:68.8,width:18.0,height:11.2},
           manual:{left:20.0,top:82.0,width:18.0,height:10.0},
           countdown:{left:39.5,top:82.0,width:21.0,height:10.0}
-        },
+        }, CFG.hotspots || {}),
         contagem: Object.assign({
           dataEvento:"2026-12-20T19:30:00",
           textoFinal:"A festa começou!",
