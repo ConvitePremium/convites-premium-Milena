@@ -23,7 +23,7 @@ window.CONFIG = {
   // ----- IDENTIDADE DO CONVITE -------------------------------------------
   // Nome do aniversariante. Aparece no título da aba do navegador e nos
   // textos automáticos do convite.
-  nome: "Liz",
+  nome: "Milena",
 
   // ----- WHATSAPP (CONFIRMAR PRESENÇA) -----------------------------------
   // numero: DDI + DDD + número, SÓ DÍGITOS (sem +, espaço, parênteses ou traço).
@@ -31,13 +31,13 @@ window.CONFIG = {
   // mensagem: texto que já vem pré-preenchido quando a pessoa abre o WhatsApp.
   whatsapp: {
     numero: "5511968658529",
-    mensagem: "Olá! Confirmo minha presença no aniversário da Liz."
+    mensagem: "Olá! Confirmo minha presença no aniversário de 15 anos da Milena."
   },
 
   // ----- LOCALIZAÇÃO (BOTÃO MAPA) ----------------------------------------
   // Link completo do Google Maps. Abra o local no Maps, clique em "Compartilar"
   // -> "Copiar link" e cole aqui (mantenha as aspas).
-  mapa: "https://www.google.com/maps/@-23.451182,-46.5805723,3a,75y,60.02h,65.83t/data=!3m7!1e1!3m5!1svurXXU26dTFJo_HwDhBH-w!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D24.169645649598294%26panoid%3DvurXXU26dTFJo_HwDhBH-w%26yaw%3D60.02452636468114!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI2MDcyMC4wIKXMDSoASAFQAw%3D%3D",
+  mapa: "https://maps.app.goo.gl/WKsVP6mXFh3DHTYB6",
 
   // ----- DUAS LOCALIZAÇÕES (OPCIONAL) ------------------------------------
   // Preencha os dois links abaixo para o botão Localização abrir um menu
@@ -46,11 +46,11 @@ window.CONFIG = {
   localizacoes: {
     missa: {
       texto: "Missa",
-      link: "COLE_AQUI_O_LINK_DA_MISSA"
+      link: "https://www.google.com/maps?q=-21.2345217,-44.9913317&z=17&hl=pt-BR"
     },
     festa: {
       texto: "Festa",
-      link: "COLE_AQUI_O_LINK_DA_FESTA"
+      link: "https://maps.app.goo.gl/WKsVP6mXFh3DHTYB6"
     }
   },
 
