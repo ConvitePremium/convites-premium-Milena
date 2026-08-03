@@ -46,7 +46,7 @@ window.CONFIG = {
   localizacoes: {
     missa: {
       texto: "Missa",
-      link: "google.com/maps?q=-21.2353533,-44.992485&z=17&hl=pt-BR"
+      link: "https://maps.app.goo.gl/XgXvtTtAGXC32wX49"
     },
     festa: {
       texto: "Festa",
